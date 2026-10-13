@@ -1,0 +1,5 @@
+Protein_A,Protein_B,Database,Interaction_Type,Detection_Method,Experimental_Context,Reference
+IL6,IL6R,IntAct,Physical association,Pull down,In vitro,PMID:11238858
+IL6,IL6R,OmniPath,Directed stimulatory relationship,Not applicable,Database annotation,OmniPath
+IL6,IL6ST,OmniPath,Directed stimulatory relationship,Not applicable,Database annotation,OmniPath
+IL6R,IL6ST,OmniPath,Directed stimulatory relationship,Not applicable,Database annotation,OmniPath

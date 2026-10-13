@@ -18,15 +18,19 @@ How can a skeletal muscle cell communicate with a hepatocyte through interleukin
 
 Skeletal muscle cells can function as signaling cells by producing and releasing myokines. In this investigation, skeletal muscle is the selected sender cell and exercise is the biological context.
 
+### Sender-Cell Evidence
+
+![Sender Cell Evidence](figures/01_sender_cell_evidence.jpg)
+
 ---
 
 ## 2. Candidate Ligand and Evidence for Sender-Cell Expression
 
 ### Signaling Molecule
+
 **Interleukin-6 (IL-6)**
 
-### Official Gene/Protein Name
-**IL6**
+**Official Gene/Protein Name:** IL6
 
 A peer-reviewed source reports that skeletal muscle fibers express and release IL-6 during and after exercise. This supports IL-6 as a signaling molecule produced by the selected skeletal muscle sender cell.
 
@@ -36,21 +40,16 @@ A peer-reviewed source reports that skeletal muscle fibers express and release I
 
 The proposed communication is endocrine-like because IL-6 released from skeletal muscle can enter the circulation and act on a distant tissue such as the liver.
 
-### Evidence
-
-The supporting peer-reviewed source is:
+### Supporting Source
 
 *Skeletal muscle as an endocrine organ: PGC-1α, myokines and exercise.*
-
-### Evidence File
-
-`figures/01_sender_cell_evidence.jpg`
 
 ---
 
 ## 3. Receptor and Receiver Cell
 
 ### Receiver Cell
+
 **Hepatocyte (liver cell)**
 
 ### Receptor System
@@ -86,13 +85,11 @@ The OmniPath results support IL6 as a signaling ligand and IL6R as a receptor. T
 
 These database relationships support the proposed ligand-receptor system. However, database annotations do not by themselves prove that signaling occurs between the selected cell types under every physiological condition.
 
-### Main Evidence File
+### OmniPath Evidence
 
-`figures/02_omnipath_evidence.png`
+![OmniPath Evidence](figures/02_omnipath_evidence.png)
 
-### Additional Evidence
-
-`omnipath_relationships.jpg`
+Additional OmniPath evidence: `omnipath_relationships.jpg`
 
 ---
 
@@ -128,13 +125,11 @@ This enriched process is consistent with the proposed IL-6 signaling mechanism.
 
 STRING associations represent functional protein associations and do not automatically prove direct physical binding or establish pathway direction. Therefore, the STRING network was interpreted together with OmniPath, IntAct, and biological knowledge.
 
-### Main Evidence File
+### STRING Network
 
-`figures/03_string_network.jpg`
+![STRING Network](figures/03_string_network.jpg)
 
-### Additional Evidence
-
-`string_enrichment.jpg`
+Additional STRING enrichment evidence: `string_enrichment.jpg`
 
 ---
 
@@ -162,13 +157,11 @@ The IntAct record provides experimental evidence supporting a physical associati
 
 The interaction should be interpreted within its experimental context and does not by itself prove that the interaction occurs specifically between skeletal muscle cells and hepatocytes during exercise.
 
-### Main Evidence File
+### IntAct Evidence
 
-`figures/04_intact_evidence.jpg`
+![IntAct Evidence](figures/04_intact_evidence.jpg)
 
-### Additional Evidence
-
-`intact_interaction_viewer.jpg`
+Additional IntAct interaction viewer: `intact_interaction_viewer.jpg`
 
 ---
 
@@ -210,9 +203,9 @@ The proposed communication pathway is:
 
 **Acute-phase response**
 
-### Final Model Figure
+### Final Model
 
-`figures/05_final_model.jpg`
+![Final Cell-to-Cell Communication Model](figures/05_final_model.jpg)
 
 ---
 
@@ -265,39 +258,53 @@ The expected response in the hepatocyte is **altered gene expression associated 
 # 10. References and Database Sources
 
 ### Human Protein Atlas
+
 Used to examine protein expression and support the choice of the receiver cell.
 
+https://www.proteinatlas.org/
+
 ### OmniPath
+
 Used to examine intercellular signaling roles and signaling relationships.
 
+https://omnipathdb.org/
+
 ### STRING
+
 Used to examine functional protein associations and pathway enrichment.
 
+https://string-db.org/
+
 ### IntAct
+
 Used to examine the curated IL6–IL6R molecular interaction and its experimental evidence.
+
+https://www.ebi.ac.uk/intact/
 
 ### Peer-Reviewed Source
 
 *Skeletal muscle as an endocrine organ: PGC-1α, myokines and exercise.*
 
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4657151/
+
 ---
 
 # 11. Evidence Files
 
-The repository contains the following primary evidence files:
+### Primary Evidence
 
-1. `figures/01_sender_cell_evidence.jpg`
-2. `figures/02_omnipath_evidence.png`
-3. `figures/03_string_network.jpg`
-4. `figures/04_intact_evidence.jpg`
-5. `figures/05_final_model.jpg`
+- `figures/01_sender_cell_evidence.jpg`
+- `figures/02_omnipath_evidence.png`
+- `figures/03_string_network.jpg`
+- `figures/04_intact_evidence.jpg`
+- `figures/05_final_model.jpg`
 
-Additional supporting screenshots:
+### Additional Supporting Evidence
 
 - `hpa_receptor_expression.jpg`
+- `intact_interaction_viewer.jpg`
 - `omnipath_relationships.jpg`
 - `string_enrichment.jpg`
-- `intact_interaction_viewer.jpg`
 
 ---
 
@@ -311,4 +318,4 @@ A STRING association does not automatically represent direct binding or pathway 
 
 An IntAct record should be interpreted together with its experimental method, experimental context, and publication information.
 
-The final model therefore separates observations supported by databases and published evidence from biological inferences made by integrating those observations.
+The final model therefore separates observations supported by databases and published evidence from biological inferences.

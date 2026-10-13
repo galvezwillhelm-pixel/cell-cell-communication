@@ -10,9 +10,11 @@ How can a skeletal muscle cell communicate with a hepatocyte through interleukin
 
 ## 1. Chosen Sender Cell and Biological Context
 
-**Sender Cell:** Skeletal muscle cell (myocyte)
+### Sender Cell
+**Skeletal muscle cell (myocyte)**
 
-**Biological Context:** Exercise and skeletal muscle contraction
+### Biological Context
+**Exercise and skeletal muscle contraction**
 
 Skeletal muscle cells can function as signaling cells by producing and releasing myokines. In this investigation, skeletal muscle is the selected sender cell and exercise is the biological context.
 
@@ -20,33 +22,53 @@ Skeletal muscle cells can function as signaling cells by producing and releasing
 
 ## 2. Candidate Ligand and Evidence for Sender-Cell Expression
 
-**Signaling Molecule:** Interleukin-6 (IL-6)
+### Signaling Molecule
+**Interleukin-6 (IL-6)**
 
-**Official Gene/Protein Name:** IL6
+### Official Gene/Protein Name
+**IL6**
 
 A peer-reviewed source reports that skeletal muscle fibers express and release IL-6 during and after exercise. This supports IL-6 as a signaling molecule produced by the selected skeletal muscle sender cell.
 
-**Type of Signaling:** Endocrine-like signaling
+### Type of Signaling
+
+**Endocrine-like signaling**
 
 The proposed communication is endocrine-like because IL-6 released from skeletal muscle can enter the circulation and act on a distant tissue such as the liver.
 
-**Evidence File:** `figures/01_sender_cell_evidence.png`
+### Evidence
+
+The supporting peer-reviewed source is:
+
+*Skeletal muscle as an endocrine organ: PGC-1α, myokines and exercise.*
+
+### Evidence File
+
+`figures/01_sender_cell_evidence.jpg`
 
 ---
 
 ## 3. Receptor and Receiver Cell
 
-**Receiver Cell:** Hepatocyte (liver cell)
+### Receiver Cell
+**Hepatocyte (liver cell)**
 
-**Receptor System:**
-- IL6R – Interleukin-6 receptor
-- IL6ST – Interleukin-6 signal transducer (gp130)
+### Receptor System
 
-IL-6 binds IL6R, while IL6ST/gp130 functions as the signal-transducing receptor component. Human Protein Atlas evidence supports IL6R expression in hepatocytes, making the hepatocyte a biologically reasonable receiver cell.
+- **IL6R** – Interleukin-6 receptor
+- **IL6ST** – Interleukin-6 signal transducer (gp130)
+
+IL-6 binds IL6R, while IL6ST/gp130 functions as the signal-transducing receptor component.
+
+Human Protein Atlas evidence supports IL6R expression in hepatocytes, making the hepatocyte a biologically reasonable receiver cell.
 
 ### Checkpoint Model
 
 The skeletal muscle cell produces and releases IL-6, which can signal through the IL-6 receptor complex involving IL6R and IL6ST on hepatocytes in the context of exercise-related communication.
+
+### Supporting Evidence
+
+`hpa_receptor_expression.jpg`
 
 ---
 
@@ -56,15 +78,21 @@ OmniPath was used to examine the intercellular signaling roles and relationships
 
 The following relationships were identified:
 
-- IL6 → IL6R
-- IL6 → IL6ST
-- IL6R → IL6ST
+- **IL6 → IL6R**
+- **IL6 → IL6ST**
+- **IL6R → IL6ST**
 
 The OmniPath results support IL6 as a signaling ligand and IL6R as a receptor. The results also provide directed signaling relationships involving IL6, IL6R, and IL6ST.
 
 These database relationships support the proposed ligand-receptor system. However, database annotations do not by themselves prove that signaling occurs between the selected cell types under every physiological condition.
 
-**Evidence File:** `figures/02_omnipath_evidence.png`
+### Main Evidence File
+
+`figures/02_omnipath_evidence.png`
+
+### Additional Evidence
+
+`omnipath_relationships.jpg`
 
 ---
 
@@ -72,15 +100,15 @@ These database relationships support the proposed ligand-receptor system. Howeve
 
 STRING was used to investigate proteins associated with the IL6 receptor-centered signaling system.
 
-The resulting network contained 11 proteins and 34 edges.
+The resulting network contained **11 proteins and 34 edges**.
 
 Important proteins relevant to the proposed signaling pathway include:
 
-- IL6R
-- IL6ST
-- JAK1
-- JAK2
-- STAT3
+- **IL6R**
+- **IL6ST**
+- **JAK1**
+- **JAK2**
+- **STAT3**
 
 The proposed intracellular signaling sequence is:
 
@@ -96,9 +124,17 @@ The proposed intracellular signaling sequence is:
 
 This enriched process is consistent with the proposed IL-6 signaling mechanism.
 
+### STRING Interpretation
+
 STRING associations represent functional protein associations and do not automatically prove direct physical binding or establish pathway direction. Therefore, the STRING network was interpreted together with OmniPath, IntAct, and biological knowledge.
 
-**Evidence File:** `figures/03_string_network.png`
+### Main Evidence File
+
+`figures/03_string_network.jpg`
+
+### Additional Evidence
+
+`string_enrichment.jpg`
 
 ---
 
@@ -108,7 +144,9 @@ The molecular interaction examined in IntAct was:
 
 **IL6 – IL6R**
 
-**IntAct Accession:** EBI-9007446
+### IntAct Record
+
+**Accession:** EBI-9007446
 
 **Interaction Type:** Physical association
 
@@ -120,13 +158,21 @@ The molecular interaction examined in IntAct was:
 
 **Publication PMID:** 11238858
 
-The IntAct record provides experimental evidence supporting a physical association between IL6 and IL6R. The evidence should be interpreted within its experimental context and does not by itself prove that the interaction occurs specifically between skeletal muscle cells and hepatocytes during exercise.
+The IntAct record provides experimental evidence supporting a physical association between IL6 and IL6R. The evidence was obtained using a pull-down detection method in an in vitro experimental context.
 
-**Evidence File:** `figures/04_intact_evidence.png`
+The interaction should be interpreted within its experimental context and does not by itself prove that the interaction occurs specifically between skeletal muscle cells and hepatocytes during exercise.
+
+### Main Evidence File
+
+`figures/04_intact_evidence.jpg`
+
+### Additional Evidence
+
+`intact_interaction_viewer.jpg`
 
 ---
 
-## 7. Final Cell-to-Cell Communication Model
+# 7. Final Cell-to-Cell Communication Model
 
 The proposed communication pathway is:
 
@@ -164,7 +210,9 @@ The proposed communication pathway is:
 
 **Acute-phase response**
 
-**Final Model Figure:** `figures/05_final_model.png`
+### Final Model Figure
+
+`figures/05_final_model.jpg`
 
 ---
 
@@ -214,7 +262,7 @@ The expected response in the hepatocyte is **altered gene expression associated 
 
 ---
 
-# 10. References
+# 10. References and Database Sources
 
 ### Human Protein Atlas
 Used to examine protein expression and support the choice of the receiver cell.
@@ -232,6 +280,35 @@ Used to examine the curated IL6–IL6R molecular interaction and its experimenta
 
 *Skeletal muscle as an endocrine organ: PGC-1α, myokines and exercise.*
 
-### Important Database Interpretation Note
+---
 
-Database presence is evidence, not proof that an interaction occurs in every cell type or physiological condition. STRING associations do not automatically represent direct binding or pathway direction. IntAct evidence should be interpreted together with its experimental method and context. The final model therefore distinguishes database-supported observations from biological inference.
+# 11. Evidence Files
+
+The repository contains the following primary evidence files:
+
+1. `figures/01_sender_cell_evidence.jpg`
+2. `figures/02_omnipath_evidence.png`
+3. `figures/03_string_network.jpg`
+4. `figures/04_intact_evidence.jpg`
+5. `figures/05_final_model.jpg`
+
+Additional supporting screenshots:
+
+- `hpa_receptor_expression.jpg`
+- `omnipath_relationships.jpg`
+- `string_enrichment.jpg`
+- `intact_interaction_viewer.jpg`
+
+---
+
+# 12. Database Interpretation Note
+
+Database presence is evidence, not proof that an interaction occurs in every cell type or physiological condition.
+
+Expression of a ligand or receptor does not by itself prove that signaling occurs between the chosen cells.
+
+A STRING association does not automatically represent direct binding or pathway direction.
+
+An IntAct record should be interpreted together with its experimental method, experimental context, and publication information.
+
+The final model therefore separates observations supported by databases and published evidence from biological inferences made by integrating those observations.
